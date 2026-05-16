@@ -1,15 +1,25 @@
-# Website Agent Instructions
+# Female Fairness Website Agent Instructions
 
-These instructions apply to work under `website/`.
+This document provides the repo-wide project context and working conventions for AI-assisted development in the standalone Female Fairness website repository.
+
+## Project Overview
+
+The website is the React, TypeScript, and Vite product surface for Female Fairness. It now lives in this standalone repository, separate from the API and mobile application repository.
 
 ## Website Implementation Rules
 
 - The website is a React, TypeScript, and Vite app.
 - Follow the website's own component, styling, routing, responsiveness, and accessibility conventions.
-- Do not apply `mobile/AGENTS.md` or the mobile Figma mapping rules to website work.
+- Do not apply mobile app implementation rules or mobile Figma mapping rules to website work.
 - When mapping a Figma design to the website, preserve the design intent while using reusable website components and web-appropriate styling.
 - Keep website implementation responsive across desktop and mobile web viewports.
-- Verify website changes with `npm run build` in `website/` before finishing when feasible.
+- Verify website changes with `npm run build` from the repository root before finishing when feasible.
+
+## Website Agent Responsibilities
+
+- Own the React website implementation in this repository.
+- Produce website features, reusable web components, and website verification.
+- Ensure responsive, accessible web UX that follows website-specific conventions.
 
 ## Figma-To-Website Guidance
 
@@ -17,6 +27,19 @@ These instructions apply to work under `website/`.
 - Prefer shared website primitives and reusable CSS/component patterns over page-local one-off styling.
 - Preserve existing website behavior and copy unless the task explicitly requests a behavior or copy change.
 - Use semantic HTML and accessible controls for interactive elements.
+
+## Development Workflow
+
+```bash
+# Install dependencies
+npm install
+
+# Start local development server
+npm run dev
+
+# Verify production build
+npm run build
+```
 
 ## Website Figma Design References
 
