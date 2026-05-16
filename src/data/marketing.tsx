@@ -203,7 +203,7 @@ export function getMarketingContent(
       teamMembers: [
         {
           name: 'Maria Olsen',
-          role: 'Medstifter & CEO',
+          role: 'Stifter og CEO',
           bio: 'Maria startede Female Fairness efter at have indset, hvor meget kvinder bruger på sundhed uden nogensinde at have et klart overblik. Hun er drevet af at gøre de udgifter synlige og nemme at forstå.',
           image: teamMaria,
           imageVariant: 'maria',
@@ -379,7 +379,7 @@ export function getMarketingContent(
     teamMembers: [
       {
         name: 'Maria Olsen',
-        role: 'Co-founder & CEO',
+        role: 'Founder and CEO',
         bio: 'Maria started Female Fairness after realizing how much women spend on health without ever having a clear overview. She is driven to make those costs visible and easy to understand.',
         image: teamMaria,
         imageVariant: 'maria',
