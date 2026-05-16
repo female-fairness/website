@@ -1,0 +1,40 @@
+@font-face {
+  font-display: swap;
+  font-family: "Delight";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/Delight-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Delight";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../assets/fonts/Delight-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Source Serif 4 18pt";
+  font-style: italic;
+  font-weight: 500;
+  src: url("../assets/fonts/SourceSerif4_18pt-MediumItalic.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "No Speak Language";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/NoSpeakLanguage-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../assets/fonts/Oswald-Bold.ttf") format("truetype");
+}

@@ -1,0 +1,63 @@
+:root {
+  --color-brand: #daffb0;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-darker-beige: #9a988c;
+  --color-dark-beige: #bfbdb1;
+  --color-beige: #e2e0d8;
+  --color-beige-deep: #cac7b8;
+  --color-light-beige: #f2f1ea;
+  --color-lighter-beige: #f5f5f2;
+  --color-neutral-soft: #ececec;
+  --color-tiffany: #65d0ed;
+  --color-dark-green: #36614b;
+  --color-purple: #845e81;
+  --color-light-purple: #f1d8ec;
+  --color-light-green: #eef2b1;
+  --color-red: #ffa789;
+  --color-dark-red: #eb3f33;
+  --color-brown: #8f6869;
+  --color-layered-paper: #dcd8c8;
+
+  --alpha-muted: rgba(0, 0, 0, 0.35);
+  --alpha-soft: rgba(0, 0, 0, 0.25);
+  --alpha-border: rgba(0, 0, 0, 0.15);
+  --alpha-border-strong: rgba(0, 0, 0, 0.35);
+
+  --font-body: "Delight", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  --font-body-semibold: "Delight", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  --font-italic: "Source Serif 4 18pt", Georgia, serif;
+  --font-handwritten: "No Speak Language", cursive;
+  --font-display: "Oswald", Impact, sans-serif;
+
+  --space-2: 2px;
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-23: 23px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-40: 40px;
+  --space-48: 48px;
+  --space-56: 56px;
+  --space-64: 64px;
+  --space-72: 72px;
+  --space-88: 88px;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --max-page: 1440px;
+  --page-gutter: 23px;
+  --header-height: 55px;
+}
+
+@media (max-width: 720px) {
+  :root {
+    --page-gutter: 16px;
+    --header-height: 64px;
+  }
+}
