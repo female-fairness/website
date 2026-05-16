@@ -15,15 +15,18 @@ import { HeroSection } from '../components/HeroSection';
 import { Section } from '../components/Section';
 import { TestimonialGrid } from '../components/TestimonialGrid';
 import { marketingLinks } from '../config/links';
-import {
-  communityFeatures,
-  homeImages,
-  productFeatures,
-  testimonials,
-} from '../data/marketing';
+import { getMarketingContent, homeImages } from '../data/marketing';
+import type { LocaleContent } from '../i18n/content';
+import type { Locale } from '../i18n/routing';
 
-export function HomePage() {
-  const communityCards = communityFeatures({
+interface HomePageProps {
+  content: LocaleContent;
+  locale: Locale;
+}
+
+export function HomePage({ content, locale }: HomePageProps) {
+  const copy = content.home;
+  const marketing = getMarketingContent(locale, {
     events: marketingLinks.events,
     partner: marketingLinks.partner,
     donation: marketingLinks.donation,
@@ -31,74 +34,42 @@ export function HomePage() {
 
   return (
     <div className="site-page">
-      <Header activePage="home" />
+      <Header activePage="home" labels={content.shared.header} locale={locale} />
       <main className="site-main">
         <HeroSection
           action
-          lead={
-            <span className="italic">
-              What if you could have that money back?
-            </span>
-          }
-          title={
-            <>
-              Women spend <span className="no-break">1-2M</span> dkk more on
-              health over a lifetime compared to men.
-            </>
-          }
+          actionLabel={content.shared.header.downloadApp}
+          lead={copy.heroLead}
+          title={copy.heroTitle}
           titleWidth="narrow"
-          visual={<ExpenseOrbit />}
+          visual={<ExpenseOrbit copy={content.illustrations.expenseOrbit} />}
         />
 
         <Section kind="stats-band" tone="deep">
           <div className="stats-band__items">
             <div className="stat-item">
               <img alt="" src={clinicIcon} />
-              <p className="body-copy">
-                In Denmark, women are diagnosed{' '}
-                <span className="italic">4 years later than men.</span>
-              </p>
+              <p className="body-copy">{copy.stats[0]}</p>
             </div>
             <div className="stat-item">
               <img alt="" src={tintIcon} />
-              <p className="body-copy">
-                <span className="italic">1 in 4 women</span> struggle to afford
-                menstrual products.
-              </p>
+              <p className="body-copy">{copy.stats[1]}</p>
             </div>
             <div className="stat-item">
               <img alt="" src={calendarIcon} />
-              <p className="body-copy">
-                Women <span className="italic">lose 30-50 workdays</span> on
-                average due to pregnancy appointments, nausea and complications.
-              </p>
+              <p className="body-copy">{copy.stats[2]}</p>
             </div>
           </div>
-          <h2 className="headline stats-band__headline">
-            It&apos;s not a choice.
-            <br />
-            It&apos;s biology and lack of support.
-          </h2>
+          <h2 className="headline stats-band__headline">{copy.statsHeadline}</h2>
         </Section>
 
         <section className="section section--beige split-section">
           <div className="split-section__copy">
-            <h2 className="headline">
-              We want to
-              <br />
-              change that.
-            </h2>
-            <p className="body-copy split-section__text">
-              Female health shouldn&apos;t be a luxury,{' '}
-              <span className="italic">it should be a right.</span>
-              <br />
-              We want to give women clarity over their hidden health expenses.
-              With our community and tools, we turn financial pain into
-              empowerment with one click.
-            </p>
+            <h2 className="headline">{copy.changeTitle}</h2>
+            <p className="body-copy split-section__text">{copy.changeText}</p>
           </div>
           <div className="split-section__visual split-section__visual--home-phone">
-            <img alt="Female Fairness mobile app screen" src={homeImages.homePhone} />
+            <img alt={copy.homePhoneAlt} src={homeImages.homePhone} />
           </div>
         </section>
 
@@ -109,44 +80,29 @@ export function HomePage() {
         >
           <div className="card-section__intro">
             <h2 className="headline" id="product-heading">
-              Your health, your numbers, your power
+              {copy.productTitle}
             </h2>
-            <p className="body-copy">
-              Track, compare, and understand your real health costs — from
-              period to menopause.{' '}
-              <span className="italic">
-                Get clarity, control, and fairness in one click.
-              </span>
-            </p>
+            <p className="body-copy">{copy.productText}</p>
           </div>
           <div className="feature-grid">
-            <FeatureCard card={productFeatures[0]}>
-              <MiniChart />
+            <FeatureCard card={marketing.productFeatures[0]}>
+              <MiniChart copy={content.illustrations.miniChart} />
             </FeatureCard>
-            <FeatureCard card={productFeatures[1]}>
-              <MiniCalendar />
+            <FeatureCard card={marketing.productFeatures[1]}>
+              <MiniCalendar copy={content.illustrations.miniCalendar} />
             </FeatureCard>
-            <FeatureCard card={productFeatures[2]} />
+            <FeatureCard card={marketing.productFeatures[2]} />
           </div>
         </Section>
 
         <section className="section section--light split-section">
           <div className="split-section__copy">
-            <h2 className="headline">
-              Get informed.
-              <br />
-              Get empowered.
-            </h2>
-            <p className="body-copy split-section__text">
-              We cannot take action without clear information on the gender gap.
-              On our article section, you can read transparent and actionable
-              data on the gender health gap, women&apos;s health discoveries,
-              finances, and more.
-            </p>
+            <h2 className="headline">{copy.informedTitle}</h2>
+            <p className="body-copy split-section__text">{copy.informedText}</p>
           </div>
           <div className="split-section__visual">
             <img
-              alt="Female Fairness article shown on a mobile phone"
+              alt={copy.articlesPhoneAlt}
               className="article-visual"
               src={homeImages.articlesPhone}
             />
@@ -159,14 +115,14 @@ export function HomePage() {
           tone="white"
         >
           <h2 className="headline" id="community-heading">
-            Join our community
+            {copy.communityTitle}
           </h2>
           <div className="feature-grid">
-            <FeatureCard card={communityCards[0]}>
-              <EventBanner />
+            <FeatureCard card={marketing.communityFeatures[0]}>
+              <EventBanner copy={content.illustrations.eventBanner} />
             </FeatureCard>
-            <FeatureCard card={communityCards[1]} />
-            <FeatureCard card={communityCards[2]} />
+            <FeatureCard card={marketing.communityFeatures[1]} />
+            <FeatureCard card={marketing.communityFeatures[2]} />
           </div>
         </Section>
 
@@ -176,18 +132,19 @@ export function HomePage() {
           tone="beige"
         >
           <h2 className="headline" id="impact-heading">
-            Real women, real impact
+            {copy.impactTitle}
           </h2>
-          <TestimonialGrid testimonials={testimonials} />
+          <TestimonialGrid testimonials={marketing.testimonials} />
         </Section>
 
         <CTASection
+          actionLabel={content.shared.header.downloadApp}
           size="home"
-          text="Join us in creating a world where health costs don't discriminate. Where transparency replaces invisibility."
-          title="Ready to close the gap?"
+          text={copy.ctaText}
+          title={copy.ctaTitle}
         />
       </main>
-      <Footer />
+      <Footer labels={content.shared.footer} />
     </div>
   );
 }

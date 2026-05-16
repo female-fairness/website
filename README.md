@@ -11,7 +11,9 @@ npm run dev
 
 Routes:
 
-- `/` - Homepage
-- `/about` - About page
+- `/` - Homepage, auto-localized from browser language
+- `/about` - About page, auto-localized from browser language
+- `/en`, `/en/about` - English pages
+- `/da`, `/da/about` - Danish pages
 
 External destinations are centralized in `src/config/links.ts` and can be overridden with `VITE_*` environment variables.

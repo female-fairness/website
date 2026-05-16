@@ -8,6 +8,7 @@ import { Button } from './Button';
 interface CTASectionProps {
   title: string;
   text: string;
+  actionLabel: string;
   artwork?: ReactNode;
   size?: 'default' | 'home';
 }
@@ -15,6 +16,7 @@ interface CTASectionProps {
 export function CTASection({
   title,
   text,
+  actionLabel,
   artwork,
   size = 'default',
 }: CTASectionProps) {
@@ -25,7 +27,7 @@ export function CTASection({
         <p className="body-copy cta-section__text">{text}</p>
         <div className="cta-section__action">
           <Button href={marketingLinks.appDownload} variant="primary">
-            Download app
+            {actionLabel}
           </Button>
         </div>
       </div>

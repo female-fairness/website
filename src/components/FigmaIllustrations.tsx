@@ -1,81 +1,83 @@
 import wordmark from '../assets/brand/wordmark.svg';
 import eventScribble from '../assets/figma/event-scribble.svg';
+import type { IllustrationCopy } from '../i18n/content';
 
 interface ExpenseOrbitProps {
+  copy: IllustrationCopy['expenseOrbit'];
   tone?: 'earth' | 'brand';
 }
 
-export function ExpenseOrbit({ tone = 'earth' }: ExpenseOrbitProps) {
+export function ExpenseOrbit({ copy, tone = 'earth' }: ExpenseOrbitProps) {
   return (
     <div
-      aria-label="Annual health cost comparison"
+      aria-label={copy.ariaLabel}
       className={`expense-orbit expense-orbit--${tone}`}
     >
       <div className="expense-orbit__large">
-        <p className="expense-orbit__amount">8,453 kr. /year</p>
-        <p className="expense-orbit__label">Yours</p>
+        <p className="expense-orbit__amount">8,453 {copy.amountYearLabel}</p>
+        <p className="expense-orbit__label">{copy.yours}</p>
         <p className="expense-orbit__list">
-          Menstrual products
-          <br />
-          Fertility
-          <br />
-          Health diagnosis
-          <br />
-          Painkillers
-          <br />
-          Contraception
-          <br />
-          Hormones
+          {copy.expenses.map((expense, index) => (
+            <span key={expense}>
+              {index > 0 ? <br /> : null}
+              {expense}
+            </span>
+          ))}
         </p>
       </div>
       <span className="expense-orbit__small" aria-hidden="true" />
       <p className="expense-orbit__man">
-        <span className="expense-orbit__amount">2,406 kr. /year</span>
+        <span className="expense-orbit__amount">2,406 {copy.amountYearLabel}</span>
         <br />
-        An average man
+        {copy.averageMan}
       </p>
     </div>
   );
 }
 
-export function MiniChart() {
+interface MiniChartProps {
+  copy: IllustrationCopy['miniChart'];
+}
+
+export function MiniChart({ copy }: MiniChartProps) {
   return (
-    <div aria-label="Monthly spending chart mockup" className="mini-chart">
+    <div aria-label={copy.ariaLabel} className="mini-chart">
       <div className="mini-chart__top">
-        <strong>
-          Monthly <span className="italic">spending</span>
-        </strong>
-        <span className="muted">Potential savings: 150 kr.</span>
+        <strong>{copy.title}</strong>
+        <span className="muted">{copy.savings}</span>
       </div>
       <p className="mini-chart__amount">1,359 kr.</p>
       <div aria-hidden="true" className="mini-chart__pie">
         <span className="mini-chart__slice-label mini-chart__slice-label--contraception">
           420 kr.
           <br />
-          Contraception
+          {copy.labels.contraception}
         </span>
         <span className="mini-chart__slice-label mini-chart__slice-label--painkillers">
           380 kr.
           <br />
-          Painkillers
+          {copy.labels.painkillers}
         </span>
         <span className="mini-chart__slice-label mini-chart__slice-label--other">
           260 kr.
           <br />
-          Other
+          {copy.labels.other}
         </span>
         <span className="mini-chart__slice-label mini-chart__slice-label--menstrual">
           800 kr.
           <br />
-          Menstrual products
+          {copy.labels.menstrualProducts}
         </span>
       </div>
     </div>
   );
 }
 
-export function MiniCalendar() {
-  const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+interface MiniCalendarProps {
+  copy: IllustrationCopy['miniCalendar'];
+}
+
+export function MiniCalendar({ copy }: MiniCalendarProps) {
   const days = [
     ['1', 'follicular', 'xl'],
     ['2', 'follicular', 'md'],
@@ -115,22 +117,20 @@ export function MiniCalendar() {
   ];
 
   const legend = [
-    ['menstrual', 'Menstrual phase'],
-    ['follicular', 'Follicular phase'],
-    ['luteal', 'Lutheal phase'],
-    ['ovulation', 'Ovulation phase'],
+    ['menstrual', copy.legend.menstrual],
+    ['follicular', copy.legend.follicular],
+    ['luteal', copy.legend.luteal],
+    ['ovulation', copy.legend.ovulation],
   ];
 
   return (
-    <div aria-label="Health tracking calendar mockup" className="mini-calendar">
+    <div aria-label={copy.ariaLabel} className="mini-calendar">
       <div className="mini-calendar__header">
-        <strong>
-          Cycle <span className="italic">tracker</span>
-        </strong>
-        <span>March</span>
+        <strong>{copy.title}</strong>
+        <span>{copy.month}</span>
       </div>
       <div className="mini-calendar__weekdays">
-        {weekdays.map((weekday) => (
+        {copy.weekdays.map((weekday) => (
           <span key={weekday}>{weekday}</span>
         ))}
       </div>
@@ -164,17 +164,19 @@ export function MiniCalendar() {
   );
 }
 
-export function EventBanner() {
+interface EventBannerProps {
+  copy: IllustrationCopy['eventBanner'];
+}
+
+export function EventBanner({ copy }: EventBannerProps) {
   return (
-    <div aria-label="Event banner mockup" className="event-banner">
+    <div aria-label={copy.ariaLabel} className="event-banner">
       <div className="event-banner__copy">
         <img alt="Female Fairness" className="event-banner__logo" src={wordmark} />
-        <p className="event-banner__title">
-          The financial impact of women&apos;s life phases
-        </p>
-        <span className="event-banner__tag">Copenhagen</span>
-        <span className="event-banner__tag">March 22</span>
-        <p className="event-banner__link">Read more &amp; sign up in link</p>
+        <p className="event-banner__title">{copy.title}</p>
+        <span className="event-banner__tag">{copy.location}</span>
+        <span className="event-banner__tag">{copy.date}</span>
+        <p className="event-banner__link">{copy.link}</p>
       </div>
       <div className="event-banner__art" aria-hidden="true">
         <img alt="" className="event-banner__scribble" src={eventScribble} />
@@ -183,36 +185,16 @@ export function EventBanner() {
   );
 }
 
-export function GapActionVisual() {
-  const tiles = [
-    {
-      label: 'Build with us',
-      copy: "You're among the first shaping a new financial system for women",
-      active: true,
-    },
-    {
-      label: 'Coming soon',
-      copy: 'Discounts on recurring health products.',
-    },
-    {
-      label: 'Coming soon',
-      copy: 'Partnerships with local pharmacies for lower prices on medication.',
-    },
-    {
-      label: 'Coming soon',
-      copy: 'Fill out a survey on female health, we give you money for it.',
-    },
-  ];
+interface GapActionVisualProps {
+  copy: IllustrationCopy['gapAction'];
+}
 
+export function GapActionVisual({ copy }: GapActionVisualProps) {
   return (
-    <div aria-label="Filling the gap rewards mockup" className="gap-action">
-      <p className="gap-action__title">
-        Filling <span className="italic">the gap</span>
-      </p>
-      <p className="gap-action__intro">
-        We&apos;re working on ways to help you save money with health expenses.
-      </p>
-      {tiles.map((tile) => (
+    <div aria-label={copy.ariaLabel} className="gap-action">
+      <p className="gap-action__title">{copy.title}</p>
+      <p className="gap-action__intro">{copy.intro}</p>
+      {copy.tiles.map((tile) => (
         <div
           className={`gap-action__tile${tile.active ? ' gap-action__tile--active' : ''}`}
           key={tile.copy}

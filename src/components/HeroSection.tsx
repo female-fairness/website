@@ -10,6 +10,7 @@ interface HeroSectionProps {
   tone?: 'light' | 'white';
   visualTone?: 'brand' | 'soft';
   action?: boolean;
+  actionLabel?: string;
   titleWidth?: 'default' | 'narrow';
 }
 
@@ -20,6 +21,7 @@ export function HeroSection({
   tone = 'light',
   visualTone = 'brand',
   action = false,
+  actionLabel = 'Download app',
   titleWidth = 'default',
 }: HeroSectionProps) {
   return (
@@ -32,7 +34,7 @@ export function HeroSection({
         {action ? (
           <div className="hero-section__action">
             <Button href={marketingLinks.appDownload} variant="brand">
-              Download app
+              {actionLabel}
             </Button>
           </div>
         ) : null}

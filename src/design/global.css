@@ -184,6 +184,30 @@ select {
   gap: 12px;
 }
 
+.language-switch {
+  align-items: center;
+  border: 1px solid var(--color-black);
+  display: inline-flex;
+  flex-shrink: 0;
+  height: 39px;
+}
+
+.language-switch__link {
+  align-items: center;
+  display: inline-flex;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 600;
+  height: 100%;
+  justify-content: center;
+  line-height: 1;
+  padding: 0 10px;
+}
+
+.language-switch__link[aria-current="true"] {
+  background: var(--color-neutral-soft);
+}
+
 .site-header [aria-current="page"] {
   background: var(--color-neutral-soft);
   border-color: var(--color-neutral-soft);
@@ -1354,6 +1378,15 @@ select {
     padding: 2px 16px;
   }
 
+  .language-switch {
+    height: 34px;
+  }
+
+  .language-switch__link {
+    font-size: 12px;
+    padding: 0 7px;
+  }
+
   .cta-section--home .cta-section__text {
     margin-top: 16px;
   }
@@ -1486,12 +1519,23 @@ select {
     padding-right: 10px;
   }
 
+  .site-header .button {
+    font-size: 11px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
   .site-header__logo {
-    width: 112px;
+    width: 96px;
   }
 
   .site-header__actions {
     gap: 4px;
+  }
+
+  .language-switch__link {
+    font-size: 11px;
+    padding: 0 5px;
   }
 
   .card-section .feature-card__media {
