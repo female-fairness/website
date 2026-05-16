@@ -40,6 +40,7 @@ jobs:
         run: |
           mkdir -p dist/about
           cp dist/index.html dist/about/index.html
+          cp -R dist/assets dist/about/assets
           cp dist/index.html dist/404.html
           touch dist/.nojekyll
 
