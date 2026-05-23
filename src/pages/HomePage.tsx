@@ -64,12 +64,14 @@ export function HomePage({ content, locale }: HomePageProps) {
         </Section>
 
         <section className="section section--beige split-section">
-          <div className="split-section__copy">
-            <h2 className="headline">{copy.changeTitle}</h2>
-            <p className="body-copy split-section__text">{copy.changeText}</p>
-          </div>
-          <div className="split-section__visual split-section__visual--home-phone">
-            <img alt={copy.homePhoneAlt} src={homeImages.homePhone} />
+          <div className="section__inner split-section__inner">
+            <div className="split-section__copy">
+              <h2 className="headline">{copy.changeTitle}</h2>
+              <p className="body-copy split-section__text">{copy.changeText}</p>
+            </div>
+            <div className="split-section__visual split-section__visual--home-phone">
+              <img alt={copy.homePhoneAlt} src={homeImages.homePhone} />
+            </div>
           </div>
         </section>
 
@@ -96,16 +98,18 @@ export function HomePage({ content, locale }: HomePageProps) {
         </Section>
 
         <section className="section section--light split-section">
-          <div className="split-section__copy">
-            <h2 className="headline">{copy.informedTitle}</h2>
-            <p className="body-copy split-section__text">{copy.informedText}</p>
-          </div>
-          <div className="split-section__visual">
-            <img
-              alt={copy.articlesPhoneAlt}
-              className="article-visual"
-              src={homeImages.articlesPhone}
-            />
+          <div className="section__inner split-section__inner">
+            <div className="split-section__copy">
+              <h2 className="headline">{copy.informedTitle}</h2>
+              <p className="body-copy split-section__text">{copy.informedText}</p>
+            </div>
+            <div className="split-section__visual">
+              <img
+                alt={copy.articlesPhoneAlt}
+                className="article-visual"
+                src={homeImages.articlesPhone}
+              />
+            </div>
           </div>
         </section>
 

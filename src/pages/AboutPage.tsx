@@ -33,8 +33,8 @@ export function AboutPage({ content, locale }: AboutPageProps) {
           lead={copy.heroLead}
           tone="white"
           title={copy.heroTitle}
-          visual={<div aria-hidden="true" className="about-placeholder" />}
-          visualTone="soft"
+          visual={<ExpenseOrbit copy={content.illustrations.expenseOrbit} />}
+          visualTone="brand"
         />
 
         <Section kind="about-story" tone="deep">

@@ -26,21 +26,23 @@ export function HeroSection({
 }: HeroSectionProps) {
   return (
     <section className={`section section--${tone} hero-section`}>
-      <div className="hero-section__copy">
-        <h1 className={`headline hero-section__title hero-section__title--${titleWidth}`}>
-          {title}
-        </h1>
-        {lead ? <p className="body-copy hero-section__lead">{lead}</p> : null}
-        {action ? (
-          <div className="hero-section__action">
-            <Button href={marketingLinks.appDownload} variant="brand">
-              {actionLabel}
-            </Button>
-          </div>
-        ) : null}
-      </div>
-      <div className={`hero-section__visual hero-section__visual--${visualTone}`}>
-        {visual}
+      <div className="section__inner hero-section__inner">
+        <div className="hero-section__copy">
+          <h1 className={`headline hero-section__title hero-section__title--${titleWidth}`}>
+            {title}
+          </h1>
+          {lead ? <p className="body-copy hero-section__lead">{lead}</p> : null}
+          {action ? (
+            <div className="hero-section__action">
+              <Button href={marketingLinks.appDownload} variant="brand">
+                {actionLabel}
+              </Button>
+            </div>
+          ) : null}
+        </div>
+        <div className={`hero-section__visual hero-section__visual--${visualTone}`}>
+          {visual}
+        </div>
       </div>
     </section>
   );
