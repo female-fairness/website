@@ -36,8 +36,8 @@ select {
 
 .site-page {
   margin: 0 auto;
-  max-width: var(--max-page);
   overflow: hidden;
+  width: 100%;
 }
 
 .site-main {
@@ -165,7 +165,6 @@ select {
   height: var(--header-height);
   justify-content: space-between;
   left: 50%;
-  max-width: var(--max-page);
   padding: 0 var(--page-gutter);
   position: fixed;
   top: 0;
