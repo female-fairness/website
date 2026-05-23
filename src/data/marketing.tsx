@@ -122,8 +122,9 @@ export function getMarketingContent(
           ),
           tone: 'light',
           action: {
-            label: 'Se events',
+            label: 'Kommer snart',
             href: links.events,
+            disabled: true,
           },
         },
         {
@@ -301,8 +302,9 @@ export function getMarketingContent(
         ),
         tone: 'light',
         action: {
-          label: 'See events',
+          label: 'Coming soon',
           href: links.events,
+          disabled: true,
         },
       },
       {

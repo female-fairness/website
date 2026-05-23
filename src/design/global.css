@@ -81,6 +81,7 @@ select {
   letter-spacing: 0;
   line-height: 72px;
   margin: 0;
+  overflow-wrap: break-word;
 }
 
 .headline--medium {
@@ -256,6 +257,7 @@ select {
   align-content: stretch;
   display: grid;
   grid-template-rows: auto auto 1fr;
+  min-width: 0;
   min-height: 641px;
   padding-top: 22px;
 }
@@ -263,6 +265,7 @@ select {
 .hero-section__title {
   line-height: 68px;
   max-width: 610px;
+  overflow-wrap: anywhere;
 }
 
 .hero-section__title--default {
