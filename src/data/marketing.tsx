@@ -219,8 +219,8 @@ export function getMarketingContent(
         },
         {
           name: 'Anders',
-          role: 'Softwareudvikler',
-          bio: 'Hjælper med softwaresiden af tingene.',
+          role: 'Teknisk bidragyder',
+          bio: 'Anders bidrager til udviklingen af Female Fairness og hjælper med at forme og understøtte teknologien bag platformen, efterhånden som den vokser.',
           image: teamAnders,
           imageVariant: 'anders',
         },
@@ -398,8 +398,8 @@ export function getMarketingContent(
       },
       {
         name: 'Anders',
-        role: 'Software developer',
-        bio: 'Helps out with the software side of things',
+        role: 'Technical Contributor',
+        bio: 'Anders contributes to the development of Female Fairness, helping shape and support the technology behind the platform as it grows.',
         image: teamAnders,
         imageVariant: 'anders',
       },
