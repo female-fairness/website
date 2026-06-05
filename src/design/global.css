@@ -296,6 +296,7 @@ select {
   display: flex;
   min-height: 641px;
   overflow: hidden;
+  position: relative;
 }
 
 .hero-section__visual--brand {
@@ -304,6 +305,22 @@ select {
 
 .hero-section__visual--soft {
   background: var(--color-neutral-soft);
+}
+
+.about-hero-frame {
+  inset: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
+.about-hero-image {
+  height: 155.13%;
+  left: 0;
+  max-width: none;
+  object-fit: fill;
+  position: absolute;
+  top: -23.39%;
+  width: 100%;
 }
 
 .split-section {

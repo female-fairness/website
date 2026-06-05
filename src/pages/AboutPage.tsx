@@ -1,3 +1,4 @@
+import aboutHero from '../assets/figma/about-hero.jpg';
 import aboutCtaScribble from '../assets/figma/about-cta-scribble.svg';
 import { CTASection } from '../components/CTASection';
 import { FeatureCard } from '../components/FeatureCard';
@@ -33,8 +34,12 @@ export function AboutPage({ content, locale }: AboutPageProps) {
           lead={copy.heroLead}
           tone="white"
           title={copy.heroTitle}
-          visual={<ExpenseOrbit copy={content.illustrations.expenseOrbit} />}
-          visualTone="brand"
+          visual={(
+            <span aria-hidden="true" className="about-hero-frame">
+              <img alt="" className="about-hero-image" src={aboutHero} />
+            </span>
+          )}
+          visualTone="soft"
         />
 
         <Section kind="about-story" tone="deep">
