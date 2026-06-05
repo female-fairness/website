@@ -6,6 +6,7 @@ import donationCells from '../assets/figma/donation-cells.svg';
 import homePhone from '../assets/figma/home-phone.png';
 import moneyStack from '../assets/figma/money-stack.svg';
 import partnerBranch from '../assets/figma/partner-branch.svg';
+import teamAnders from '../assets/figma/team-anders.jpg';
 import teamGorm from '../assets/figma/team-gorm.jpg';
 import teamMarcella from '../assets/figma/team-marcella.jpg';
 import teamMaria from '../assets/figma/team-maria.jpg';
@@ -31,7 +32,7 @@ export interface TeamMember {
   role: string;
   bio: string;
   image?: string;
-  imageVariant?: 'gorm' | 'maria';
+  imageVariant?: 'anders' | 'gorm' | 'maria';
 }
 
 export interface Testimonial {
@@ -220,6 +221,8 @@ export function getMarketingContent(
           name: 'Anders',
           role: 'Softwareudvikler',
           bio: 'Hjælper med softwaresiden af tingene.',
+          image: teamAnders,
+          imageVariant: 'anders',
         },
         {
           name: 'Marcella Fagundes',
@@ -397,6 +400,8 @@ export function getMarketingContent(
         name: 'Anders',
         role: 'Software developer',
         bio: 'Helps out with the software side of things',
+        image: teamAnders,
+        imageVariant: 'anders',
       },
       {
         name: 'Marcella Fagundes',
