@@ -373,6 +373,20 @@ select {
   width: 62.2%;
 }
 
+.split-section__visual--articles-phone {
+  position: relative;
+}
+
+.split-section__visual--articles-phone .article-visual {
+  height: 144.31%;
+  left: -54.66%;
+  max-width: none;
+  object-fit: fill;
+  position: absolute;
+  top: -8.91%;
+  width: 209.33%;
+}
+
 .stats-band {
   min-height: 391px;
   padding-top: 41px;

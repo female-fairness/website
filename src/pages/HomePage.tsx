@@ -103,7 +103,7 @@ export function HomePage({ content, locale }: HomePageProps) {
               <h2 className="headline">{copy.informedTitle}</h2>
               <p className="body-copy split-section__text">{copy.informedText}</p>
             </div>
-            <div className="split-section__visual">
+            <div className="split-section__visual split-section__visual--articles-phone">
               <img
                 alt={copy.articlesPhoneAlt}
                 className="article-visual"
