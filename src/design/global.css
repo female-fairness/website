@@ -165,12 +165,11 @@ select {
   display: flex;
   height: var(--header-height);
   justify-content: space-between;
-  left: 50%;
+  left: 0;
   padding: 0 var(--page-gutter);
   position: fixed;
   top: 0;
-  transform: translateX(-50%);
-  width: 100%;
+  width: 100vw;
   z-index: 20;
 }
 
@@ -211,6 +210,10 @@ select {
 .site-header [aria-current="page"] {
   background: var(--color-neutral-soft);
   border-color: var(--color-neutral-soft);
+}
+
+.site-header .button--primary {
+  min-width: 249px;
 }
 
 .site-footer {
@@ -1573,6 +1576,7 @@ select {
 
   .site-header .button {
     font-size: 11px;
+    min-width: 0;
     padding-left: 8px;
     padding-right: 8px;
   }
