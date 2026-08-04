@@ -57,6 +57,21 @@ interface AboutCopy {
   ctaText: string;
 }
 
+interface MerchCopy {
+  heroLead: string;
+  heroTitle: string;
+  productsTitle: string;
+  buyLabel: string;
+  colorLabel: string;
+  sizesLabel: string;
+  frontLabel: string;
+  backLabel: string;
+  shippingTitle: string;
+  shippingBody: ReactNode;
+  ctaTitle: string;
+  ctaText: string;
+}
+
 export interface IllustrationCopy {
   expenseOrbit: {
     ariaLabel: string;
@@ -111,6 +126,7 @@ export interface LocaleContent {
   shared: SharedCopy;
   home: HomeCopy;
   about: AboutCopy;
+  merch: MerchCopy;
   illustrations: IllustrationCopy;
 }
 
@@ -264,6 +280,31 @@ export const contentByLocale: Record<Locale, LocaleContent> = {
       teamTitle: 'Meet the team',
       ctaTitle: "Let's close the gap",
       ctaText: 'Join thousands of women making financial fairness possible.',
+    },
+    merch: {
+      heroLead:
+        'Organic cotton, printed front and back, and every purchase supports the work of making the invisible visible.',
+      heroTitle: 'Wear the message.',
+      productsTitle: 'The collection',
+      buyLabel: 'Buy',
+      colorLabel: 'Colour',
+      sizesLabel: 'Sizes',
+      frontLabel: 'Front',
+      backLabel: 'Back',
+      shippingTitle: 'Packed and posted by us',
+      shippingBody: (
+        <>
+          We pack and send every order ourselves from Copenhagen. Checkout is
+          handled securely by Stripe, and you will get a confirmation by email
+          as soon as your order is on its way.
+          <br />
+          <br />
+          Questions about sizes, delivery, or anything else? Write to us at
+          maria@femalefairness.org.
+        </>
+      ),
+      ctaTitle: 'Fairness never goes out of style',
+      ctaText: 'Track the gap in the app while you wear the message.',
     },
     illustrations: {
       expenseOrbit: {
@@ -498,6 +539,31 @@ export const contentByLocale: Record<Locale, LocaleContent> = {
       teamTitle: 'Mød teamet',
       ctaTitle: 'Lad os lukke gabet',
       ctaText: 'Bliv en del af de tusinder af kvinder, der gør økonomisk fairness mulig.',
+    },
+    merch: {
+      heroLead:
+        'Økologisk bomuld, trykt for og bag, og hvert køb støtter arbejdet med at gøre det usynlige synligt.',
+      heroTitle: 'Bær budskabet.',
+      productsTitle: 'Kollektionen',
+      buyLabel: 'Køb',
+      colorLabel: 'Farve',
+      sizesLabel: 'Størrelser',
+      frontLabel: 'Forside',
+      backLabel: 'Bagside',
+      shippingTitle: 'Pakket og sendt af os',
+      shippingBody: (
+        <>
+          Vi pakker og sender hver eneste ordre selv fra København. Betalingen
+          håndteres sikkert af Stripe, og du får en bekræftelse på mail, så
+          snart din ordre er på vej.
+          <br />
+          <br />
+          Spørgsmål om størrelser, levering eller noget helt andet? Skriv til os
+          på maria@femalefairness.org.
+        </>
+      ),
+      ctaTitle: 'Fairness never goes out of style',
+      ctaText: 'Følg gabet i appen, mens du bærer budskabet.',
     },
     illustrations: {
       expenseOrbit: {

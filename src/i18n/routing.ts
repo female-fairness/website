@@ -1,9 +1,21 @@
 export const locales = ['en', 'da'] as const;
 
+export const pageSegments = {
+  home: '',
+  about: 'about',
+  merch: 'merch',
+} as const;
+
 export type Locale = (typeof locales)[number];
-export type PageKey = 'home' | 'about';
+export type PageKey = keyof typeof pageSegments;
 
 const localeSet = new Set<string>(locales);
+
+const pageBySegment = new Map<string, PageKey>(
+  (Object.keys(pageSegments) as PageKey[])
+    .filter((page) => pageSegments[page])
+    .map((page) => [pageSegments[page], page]),
+);
 
 export interface ResolvedRoute {
   locale: Locale;
@@ -39,13 +51,14 @@ export function resolveRoute(pathname: string): ResolvedRoute {
 
   return {
     locale,
-    page: pageSegment === 'about' ? 'about' : 'home',
+    page: (pageSegment && pageBySegment.get(pageSegment)) || 'home',
     explicitLocale,
   };
 }
 
 export function buildLocalizedPath(page: PageKey, locale: Locale): string {
-  const suffix = page === 'about' ? '/about' : '';
+  const segment = pageSegments[page];
+  const suffix = segment ? `/${segment}` : '';
 
   return `/${locale}${suffix}`;
 }

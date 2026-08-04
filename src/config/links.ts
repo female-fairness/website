@@ -6,6 +6,8 @@ export interface MarketingLinkConfig {
   events: string;
   partner: string;
   donation: string;
+  /** Stripe Payment Link per merch SKU. Keys match `sku` in src/data/merch.ts. */
+  merch: Record<string, string>;
 }
 
 const placeholder = '#';
@@ -21,4 +23,10 @@ export const marketingLinks: MarketingLinkConfig = {
   events: import.meta.env.VITE_EVENTS_URL ?? placeholder,
   partner: import.meta.env.VITE_PARTNER_URL ?? partnerEmailUrl,
   donation: import.meta.env.VITE_DONATION_URL ?? placeholder,
+  merch: {
+    '26019547986700': import.meta.env.VITE_MERCH_TEE_SCRIBBLE_URL ?? placeholder,
+    '26019695056151': import.meta.env.VITE_MERCH_TEE_SLOGAN_URL ?? placeholder,
+    '26019749901583': import.meta.env.VITE_MERCH_CAP_URL ?? placeholder,
+    '26019894207626': import.meta.env.VITE_MERCH_KIDS_TEE_URL ?? placeholder,
+  },
 };
