@@ -394,18 +394,18 @@ export const contentByLocale: Record<Locale, LocaleContent> = {
     shared: {
       metaTitle: 'Female Fairness',
       metaDescription:
-        'Female Fairness lukker det skjulte sundhedsomkostningsgab med gennemsigtige værktøjer, data og fællesskab.',
+        'Female Fairness arbejder for at udligne de skjulte forskelle i kvinders og mænds sundhedsudgifter med værktøjer, data og fællesskab.',
       header: {
-        homeAriaLabel: 'Female Fairness forside',
+        homeAriaLabel: 'Female Fairness – forside',
         navAriaLabel: 'Hovednavigation',
         about: 'Om os',
-        downloadApp: 'Download app',
+        downloadApp: 'Hent appen',
         languageAriaLabel: 'Sprog',
         switchToEnglish: 'Switch to English',
         switchToDanish: 'Skift til dansk',
       },
       footer: {
-        tagline: 'Hvor lighed bliver til handling.',
+        tagline: 'Her bliver ligestilling til handling.',
         address: (
           <>
             Adresse
@@ -423,8 +423,8 @@ export const contentByLocale: Record<Locale, LocaleContent> = {
       ),
       heroTitle: (
         <>
-          Kvinder bruger <span className="no-break">1-2M</span> kr. mere på
-          sundhed gennem livet sammenlignet med mænd.
+          Kvinder bruger <span className="no-break">1–2 mio.</span> kr. mere på
+          sundhed gennem livet end mænd.
         </>
       ),
       stats: [
@@ -437,15 +437,15 @@ export const contentByLocale: Record<Locale, LocaleContent> = {
           råd til menstruationsprodukter.
         </>,
         <>
-          Kvinder <span className="italic">mister i gennemsnit 30-50 arbejdsdage</span>{' '}
-          på grund af graviditetsaftaler, kvalme og komplikationer.
+          Kvinder <span className="italic">mister i gennemsnit 30–50 arbejdsdage</span>{' '}
+          på grund af graviditetsundersøgelser, kvalme og komplikationer.
         </>,
       ],
       statsHeadline: (
         <>
           Det er ikke et valg.
           <br />
-          Det er biologi og mangel på støtte.
+          Det handler om biologi og manglende støtte.
         </>
       ),
       changeTitle: (
@@ -457,21 +457,21 @@ export const contentByLocale: Record<Locale, LocaleContent> = {
       ),
       changeText: (
         <>
-          Kvinders sundhed bør ikke være en luksus,{' '}
-          <span className="italic">det bør være en ret.</span>
+          Kvinders sundhed bør ikke være en luksus –{' '}
+          <span className="italic">det bør være en rettighed.</span>
           <br />
-          Vi vil give kvinder klarhed over deres skjulte sundhedsudgifter. Med
-          vores fællesskab og værktøjer forvandler vi økonomisk smerte til
-          handlekraft med ét klik.
+          Vi vil give kvinder overblik over deres skjulte sundhedsudgifter.
+          Vores fællesskab og værktøjer giver dig handlekraft til at gøre noget
+          ved den økonomiske belastning – med ét klik.
         </>
       ),
       productTitle: 'Din sundhed, dine tal, din styrke',
       productText: (
         <>
-          Track, sammenlign og forstå dine reelle sundhedsomkostninger - fra
+          Registrer, sammenlign og forstå dine faktiske sundhedsudgifter – fra
           menstruation til overgangsalder.{' '}
           <span className="italic">
-            Få klarhed, kontrol og fairness med ét klik.
+            Få overblik, tag kontrol og skab mere lighed med ét klik.
           </span>
         </>
       ),
@@ -479,70 +479,71 @@ export const contentByLocale: Record<Locale, LocaleContent> = {
         <>
           Bliv klogere.
           <br />
-          Bliv styrket.
+          Stå stærkere.
         </>
       ),
       informedText:
-        'Vi kan ikke handle uden klar information om kønsgabet. I vores artikelsektion kan du læse gennemsigtige og handlingsrettede data om kønssundhedsgabet, nye indsigter i kvinders sundhed, økonomi og mere.',
+        'For at skabe forandring har vi brug for viden om uligheden mellem kønnene. I vores artikler finder du klare tal og viden, du kan bruge – om ulighed i sundhed, ny forskning i kvinders sundhed, økonomi og meget mere.',
       communityTitle: 'Bliv en del af fællesskabet',
-      impactTitle: 'Rigtige kvinder, reel effekt',
-      ctaTitle: 'Klar til at lukke gabet?',
+      impactTitle: 'Virkelige kvinder, mærkbar forskel',
+      ctaTitle: 'Klar til at mindske uligheden?',
       ctaText:
-        'Vær med til at skabe en verden, hvor sundhedsomkostninger ikke diskriminerer. Hvor gennemsigtighed erstatter usynlighed.',
-      homePhoneAlt: 'Female Fairness mobilapp-skærm',
-      articlesPhoneAlt: 'Female Fairness artikel vist på en mobiltelefon',
+        'Vær med til at skabe en verden, hvor sundhedsudgifter ikke rammer skævt på grund af køn, og hvor de skjulte udgifter bliver synlige.',
+      homePhoneAlt: 'Skærmbillede fra Female Fairness-appen',
+      articlesPhoneAlt: 'Artikel fra Female Fairness vist på en mobiltelefon',
     },
     about: {
       heroLead:
-        '87% af kvinder ønsker et fair økonomisk overblik, men de har ikke et værktøj. Derfor besluttede vi at skabe det.',
+        '87 % af kvinder ønsker et retvisende overblik over deres økonomi, men mangler et værktøj til det. Derfor besluttede vi at udvikle et.',
       heroTitle:
-        'Vi findes for at lukke det skjulte gab i sundhedsomkostninger.',
+        'Vi vil udligne de skjulte forskelle i sundhedsudgifter mellem kvinder og mænd.',
       storyTitle: 'Ulighed bør ikke være en personlig månedlig udgift.',
       storyBody: (
         <>
-          Kvinder bruger mere i apotekets gange, hos specialister og i tabte
-          karrieretimer sammenlignet med mænd. Det kaldes &quot;Gender
-          Health-Wealth Gap.&quot; I årtier har vi fået at vide, at vi bare må
-          betale. Vi har behandlet systemisk ulighed som en personlig månedlig
-          udgift.
+          Kvinder betaler mere end mænd – på apoteket, hos speciallægen og i
+          form af tabt arbejdstid. Det kaldes &quot;Gender Health-Wealth
+          Gap&quot;: uligheden mellem kønnene i sundhed og økonomi. I årtier har
+          vi fået at vide, at vi bare må betale. Vi har behandlet strukturel
+          ulighed som en personlig månedlig udgift.
           <br />
           <br />
-          Hvis vi ser på, hvordan hormonel prævention blev opfundet, er det
-          tydeligt: Det er os, der bliver skubbet til at tage medicin, ændre
-          vores naturlige cyklusser og bære alle symptomerne som konsekvens.
-          De bivirkninger og ekstra sundhedsudgifter bliver ikke regnet med.
-          Men hvor meget mere bruger vi egentlig? Hvorfor dør kvinder oftere af
-          hjertesygdomme, hvis de er mindre ramt af dem end mænd? Hvor er de
-          faktiske tal? Den information findes ikke tydeligt, og vi havde endnu
-          ikke en måde at måle de individuelle udgifter for hver kvinde.
+          Historien om hormonel prævention er et tydeligt eksempel: Det er
+          os, der forventes at tage medicin, ændre vores naturlige cyklus og
+          leve med bivirkningerne. De bivirkninger og ekstra sundhedsudgifter
+          bliver ikke regnet med. Men hvor meget mere bruger vi egentlig?
+          Hvorfor dør kvinder oftere af hjertesygdomme, når de rammes sjældnere
+          end mænd? Hvor er de konkrete tal? Den viden er svær at finde, og vi
+          manglede et værktøj til at opgøre den enkelte kvindes udgifter.
           <br />
           <br />
-          Det var her Female Fairness blev født, som en løsning på problemet
-          Gender Health-Wealth Gap.
+          Derfor skabte vi Female Fairness – for at gøre noget ved uligheden
+          mellem kønnene i sundhed og økonomi.
           <br />
-          Vi er ikke bare endnu et sundhedsbrand. Vi er en Femtech-Fintech
-          drivkraft dedikeret til at gøre det usynlige synligt.
+          Vi er ikke bare endnu et sundhedsbrand. Vi kombinerer teknologi til
+          kvinders sundhed med finansielle værktøjer for at gøre det usynlige
+          synligt.
         </>
       ),
       mathTitle: 'Vi ændrer regnestykket.',
       mathLead: (
         <>
           <span className="italic">
-            Ingen pinkwashing. Ingen antagelser. Kun datadrevet fairness.
+            Ingen pinkwashing. Ingen antagelser. Kun ligestilling med afsæt i
+            data.
           </span>
           <br />
-          Uanset om du er en arbejdsgiver, der vil gå forrest i sundhedslighed,
-          eller en kvinde, der er klar til at tage kontrol over livets
-          udgifter, er tiden med bare at betale forbi.
+          Uanset om du er arbejdsgiver og vil gå forrest i arbejdet for lighed i sundhed,
+          eller kvinde og klar til at tage kontrol over dine sundhedsudgifter
+          gennem livet, er tiden, hvor du bare må betale, forbi.
         </>
       ),
       teamTitle: 'Mød teamet',
-      ctaTitle: 'Lad os lukke gabet',
-      ctaText: 'Bliv en del af de tusinder af kvinder, der gør økonomisk fairness mulig.',
+      ctaTitle: 'Lad os mindske uligheden',
+      ctaText: 'Bliv en del af fællesskabet med tusindvis af kvinder, der arbejder for økonomisk ligestilling.',
     },
     merch: {
       heroLead:
-        'Økologisk bomuld, trykt for og bag, og hvert køb støtter arbejdet med at gøre det usynlige synligt.',
+        'Økologisk bomuld med tryk på både for- og bagsiden. Hvert køb støtter arbejdet med at gøre det usynlige synligt.',
       heroTitle: 'Bær budskabet.',
       productsTitle: 'Kollektionen',
       buyLabel: 'Køb',
@@ -562,18 +563,18 @@ export const contentByLocale: Record<Locale, LocaleContent> = {
           på maria@femalefairness.org.
         </>
       ),
-      ctaTitle: 'Fairness never goes out of style',
-      ctaText: 'Følg gabet i appen, mens du bærer budskabet.',
+      ctaTitle: 'Ligestilling går aldrig af mode',
+      ctaText: 'Få overblik over dine sundhedsudgifter i appen, mens du bærer budskabet.',
     },
     illustrations: {
       expenseOrbit: {
-        ariaLabel: 'Sammenligning af årlige sundhedsomkostninger',
-        amountYearLabel: 'kr. /år',
-        yours: 'Dine',
+        ariaLabel: 'Sammenligning af årlige sundhedsudgifter',
+        amountYearLabel: 'kr. om året',
+        yours: 'Dine udgifter',
         expenses: [
           'Menstruationsprodukter',
           'Fertilitet',
-          'Sundhedsdiagnose',
+          'Udredning',
           'Smertestillende',
           'Prævention',
           'Hormoner',
@@ -581,13 +582,13 @@ export const contentByLocale: Record<Locale, LocaleContent> = {
         averageMan: 'En gennemsnitlig mand',
       },
       miniChart: {
-        ariaLabel: 'Mockup af månedlige udgifter',
+        ariaLabel: 'Eksempel på en oversigt over månedlige udgifter',
         title: (
           <>
             Månedlige <span className="italic">udgifter</span>
           </>
         ),
-        savings: 'Potentiel besparelse: 150 kr.',
+        savings: 'Mulig besparelse: 150 kr.',
         labels: {
           contraception: 'Prævention',
           painkillers: 'Smertestillende',
@@ -596,46 +597,46 @@ export const contentByLocale: Record<Locale, LocaleContent> = {
         },
       },
       miniCalendar: {
-        ariaLabel: 'Mockup af sundhedskalender',
+        ariaLabel: 'Eksempel på en cykluskalender',
         title: (
           <>
-            Cyklus <span className="italic">tracker</span>
+            Følg din <span className="italic">cyklus</span>
           </>
         ),
         month: 'Marts',
         weekdays: ['Søn', 'Man', 'Tir', 'Ons', 'Tor', 'Fre', 'Lør'],
         legend: {
           menstrual: 'Menstruationsfase',
-          follicular: 'Follikulær fase',
+          follicular: 'Follikelfase',
           luteal: 'Lutealfase',
           ovulation: 'Ægløsning',
         },
       },
       eventBanner: {
-        ariaLabel: 'Mockup af eventbanner',
-        title: 'Den økonomiske effekt af kvinders livsfaser',
+        ariaLabel: 'Eksempel på et banner for et arrangement',
+        title: 'Hvad betyder kvinders livsfaser for økonomien?',
         location: 'København',
         date: '22. marts',
-        link: 'Læs mere og tilmeld dig via link',
+        link: 'Læs mere og tilmeld dig via linket',
       },
       gapAction: {
-        ariaLabel: 'Mockup af belønninger der lukker gabet',
+        ariaLabel: 'Eksempel på fordele, der mindsker uligheden i sundhedsudgifter',
         title: (
           <>
-            Luk <span className="italic">gabet</span>
+            Mindsk <span className="italic">uligheden</span>
           </>
         ),
         intro:
-          'Vi arbejder på måder, der kan hjælpe dig med at spare penge på sundhedsudgifter.',
+          'Vi arbejder på løsninger, der kan sænke dine sundhedsudgifter.',
         tiles: [
           {
-            label: 'Byg med os',
-            copy: 'Du er blandt de første, der former et nyt økonomisk system for kvinder',
+            label: 'Skab med os',
+            copy: 'Du er blandt de første, der er med til at forme et nyt økonomisk system for kvinder.',
             active: true,
           },
           {
             label: 'Kommer snart',
-            copy: 'Rabatter på tilbagevendende sundhedsprodukter.',
+            copy: 'Rabatter på sundhedsprodukter, du køber regelmæssigt.',
           },
           {
             label: 'Kommer snart',
@@ -643,7 +644,7 @@ export const contentByLocale: Record<Locale, LocaleContent> = {
           },
           {
             label: 'Kommer snart',
-            copy: 'Udfyld en undersøgelse om kvinders sundhed, og vi betaler dig for det.',
+            copy: 'Besvar et spørgeskema om kvinders sundhed, og få betaling for det.',
           },
         ],
       },

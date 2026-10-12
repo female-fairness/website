@@ -139,46 +139,46 @@ const products: Record<Locale, MerchProduct[]> = {
   da: [
     {
       sku: '26019547986700',
-      name: 'Premium økologisk T-shirt – Scribble',
+      name: 'Økologisk T-shirt i premiumkvalitet – Scribble',
       description:
-        'Premium økologisk T-shirt med Female Fairness-wordmarket på brystet og det store scribble-mærke trykt på ryggen. Direkte digitaltryk for og bag.',
+        'Økologisk T-shirt i premiumkvalitet med Female Fairness-logoet på brystet og det store krusedullemotiv trykt på ryggen. Direkte digitaltryk på både for- og bagsiden.',
       color: 'Hvid',
       sizes: ['S', 'M'],
       priceDkk: 267,
       images: {
         front: {
           src: teeAdultWordmarkFront,
-          alt: 'Hvid økologisk T-shirt med Female Fairness-wordmarket på brystet',
+          alt: 'Hvid økologisk T-shirt med Female Fairness-logoet på brystet',
         },
         back: {
           src: teeAdultWordmarkBack,
-          alt: 'Ryggen af den hvide T-shirt med det store sorte scribble-mærke',
+          alt: 'Ryggen af den hvide T-shirt med det store sorte krusedullemotiv',
         },
         prints: [
-          { src: printWordmark, alt: 'Nærbillede af Female Fairness-wordmarket' },
-          { src: printScribble, alt: 'Nærbillede af det sorte scribble-mærke' },
+          { src: printWordmark, alt: 'Nærbillede af Female Fairness-logoet' },
+          { src: printScribble, alt: 'Nærbillede af det sorte krusedullemotiv' },
         ],
       },
     },
     {
       sku: '26019695056151',
-      name: 'Premium økologisk T-shirt – Never out of style',
+      name: 'Økologisk T-shirt i premiumkvalitet – Never out of style',
       description:
-        'Samme premium økologiske T-shirt med wordmarket på brystet og “Fairness never goes out of style” over scribble-mærket på ryggen. Direkte digitaltryk for og bag.',
+        'Samme økologiske T-shirt i premiumkvalitet med Female Fairness-logoet på brystet og “Fairness never goes out of style” over krusedullemotivet på ryggen. Direkte digitaltryk på både for- og bagsiden.',
       color: 'Hvid',
       sizes: ['S', 'M', 'L'],
       priceDkk: 267,
       images: {
         front: {
           src: teeAdultSloganFront,
-          alt: 'Hvid økologisk T-shirt med Female Fairness-wordmarket på brystet',
+          alt: 'Hvid økologisk T-shirt med Female Fairness-logoet på brystet',
         },
         back: {
           src: teeAdultSloganBack,
-          alt: 'Ryggen af den hvide T-shirt med “Fairness never goes out of style” over scribble-mærket',
+          alt: 'Ryggen af den hvide T-shirt med “Fairness never goes out of style” over krusedullemotivet',
         },
         prints: [
-          { src: printWordmark, alt: 'Nærbillede af Female Fairness-wordmarket' },
+          { src: printWordmark, alt: 'Nærbillede af Female Fairness-logoet' },
           {
             src: printSloganNeverOutOfStyle,
             alt: 'Nærbillede af trykket “Fairness never goes out of style”',
@@ -188,21 +188,21 @@ const products: Record<Locale, MerchProduct[]> = {
     },
     {
       sku: '26019749901583',
-      name: 'Øko-baseballcap',
+      name: 'Økologisk kasket',
       description:
-        'Marineblå økologisk baseballcap med Female Fairness-wordmarket trykt i hvidt på forsiden. One size, direct-to-film-tryk.',
+        'Marineblå økologisk kasket med Female Fairness-logoet trykt i hvidt på forsiden. Én størrelse. Trykt med direct-to-film-teknik.',
       color: 'Marineblå',
-      sizes: ['One size'],
+      sizes: ['Én størrelse'],
       priceDkk: 189,
       images: {
         front: {
           src: capNavyFront,
-          alt: 'Marineblå baseballcap med Female Fairness-wordmarket i hvidt',
+          alt: 'Marineblå kasket med Female Fairness-logoet i hvidt',
         },
         prints: [
           {
             src: printCapWordmarkWhite,
-            alt: 'Nærbillede af det hvide Female Fairness-wordmark på marineblå',
+            alt: 'Nærbillede af det hvide Female Fairness-logo på marineblå baggrund',
           },
         ],
       },
@@ -211,21 +211,21 @@ const products: Record<Locale, MerchProduct[]> = {
       sku: '26019894207626',
       name: 'Børne-T-shirt',
       description:
-        'Børne-T-shirt fra Russell med wordmarket på brystet og “Fair from the start” over scribble-mærket på ryggen. Direkte digitaltryk for og bag.',
+        'Børne-T-shirt fra Russell med Female Fairness-logoet på brystet og “Fair from the start” over krusedullemotivet på ryggen. Direkte digitaltryk på både for- og bagsiden.',
       color: 'Hvid',
       sizes: ['110/116 (5–6 år)'],
       priceDkk: 211,
       images: {
         front: {
           src: teeKidsWordmarkFront,
-          alt: 'Hvid børne-T-shirt med Female Fairness-wordmarket på brystet',
+          alt: 'Hvid børne-T-shirt med Female Fairness-logoet på brystet',
         },
         back: {
           src: teeKidsSloganBack,
-          alt: 'Ryggen af den hvide børne-T-shirt med “Fair from the start” over scribble-mærket',
+          alt: 'Ryggen af den hvide børne-T-shirt med “Fair from the start” over krusedullemotivet',
         },
         prints: [
-          { src: printKidsWordmark, alt: 'Nærbillede af Female Fairness-wordmarket' },
+          { src: printKidsWordmark, alt: 'Nærbillede af Female Fairness-logoet' },
           {
             src: printSloganFairFromTheStart,
             alt: 'Nærbillede af trykket “Fair from the start”',

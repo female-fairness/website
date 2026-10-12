@@ -75,22 +75,22 @@ export function getMarketingContent(
     return {
       productFeatures: [
         {
-          title: 'Track dine sundhedsudgifter',
+          title: 'Følg dine sundhedsudgifter',
           body: (
             <>
-              Track din menstruationscyklus, symptomer, fysisk aktivitet,
-              humørbalance og mere. Tag kontrol over din sundhed, og få hurtigere
+              Registrer din menstruationscyklus, symptomer, fysisk aktivitet,
+              humør og meget mere. Tag kontrol over din sundhed, og få hurtigere
               klarhed.
             </>
           ),
           tone: 'light',
         },
         {
-          title: 'Track dine sundhedsdata',
+          title: 'Hold styr på din sundhed',
           body: (
             <>
-              Track din menstruationscyklus, symptomer, fysisk aktivitet,
-              humørbalance og mere.
+              Registrer din menstruationscyklus, symptomer, fysisk aktivitet,
+              humør og meget mere.
             </>
           ),
           tone: 'light',
@@ -99,8 +99,8 @@ export function getMarketingContent(
           title: 'Få penge tilbage',
           body: (
             <>
-              Vi arbejder på måder at lukke kønsgabet og give dig noget af
-              pengene tilbage. Du bør ikke bruge mere på din sundhed, bare fordi
+              Vi arbejder på at mindske uligheden i sundhedsudgifter og give dig
+              nogle af pengene tilbage. Du bør ikke bruge mere på din sundhed, bare fordi
               du har en kvindekrop.
             </>
           ),
@@ -113,10 +113,10 @@ export function getMarketingContent(
       ],
       communityFeatures: [
         {
-          title: 'Deltag i vores events',
+          title: 'Deltag i vores arrangementer',
           body: (
             <>
-              Mød en ny bølge af forandring.
+              Mød andre, der vil skabe forandring.
               <br />
               Oplev bevægelsen på tæt hold.
             </>
@@ -132,8 +132,9 @@ export function getMarketingContent(
           title: 'Bliv vores partner',
           body: (
             <>
-              Samarbejd med os om at gøre sundhedsøkonomi fair. Bliv en del af
-              de virksomheder og organisationer, der skaber reel forandring.
+              Samarbejd med os om at skabe økonomisk lighed i sundhed. Bliv en del
+              af et fællesskab af virksomheder og organisationer, der skaber
+              reel forandring.
             </>
           ),
           tone: 'brand',
@@ -147,11 +148,11 @@ export function getMarketingContent(
           },
         },
         {
-          title: 'Doner til vores økosystem',
+          title: 'Støt vores arbejde',
           body: (
             <>
-              Støt kvinder i nød gennem vores kvartalsvise donationer. Gør
-              fairness mulig.
+              Støt kvinder i nød gennem vores kvartalsvise donationer. Vær med
+              til at skabe mere lighed.
             </>
           ),
           tone: 'purple',
@@ -162,17 +163,17 @@ export function getMarketingContent(
           },
           image: {
             src: donationCells,
-            alt: 'Abstrakt illustration af et donationsøkosystem.',
+            alt: 'Abstrakt illustration af fællesskabet bag donationerne.',
           },
         },
       ],
       aboutMathFeatures: [
         {
-          title: 'Vi kvantificerer',
+          title: 'Vi sætter tal på',
           body: (
             <>
-              Vi sætter hårde tal på de biologiske og samfundsmæssige
-              omkostninger, kvinder bærer.
+              Vi sætter konkrete tal på de udgifter, kvinder har som følge af
+              biologi og samfundets indretning.
             </>
           ),
           tone: 'deep',
@@ -181,22 +182,22 @@ export function getMarketingContent(
           title: 'Vi forbinder',
           body: (
             <>
-              Vi forbinder personlige sundhedsdata med strukturel økonomisk
-              ulighed.
+              Vi viser sammenhængen mellem den enkelte kvindes sundhedsdata og
+              den strukturelle økonomiske ulighed.
             </>
           ),
           tone: 'red',
           image: {
             src: aboutEye,
-            alt: 'Øjeillustration, der repræsenterer synlighed.',
+            alt: 'Illustration af et øje som symbol på synlighed.',
           },
         },
         {
           title: 'Vi handler',
           body: (
             <>
-              Vi bygger værktøjer og B2B-partnerskaber, så kvinder endelig
-              bliver kompenseret, støttet og behandlet fair.
+              Vi udvikler værktøjer og samarbejder med virksomheder, så kvinder
+              endelig bliver kompenseret, støttet og behandlet retfærdigt.
             </>
           ),
           tone: 'coral',
@@ -206,14 +207,14 @@ export function getMarketingContent(
         {
           name: 'Maria Olsen',
           role: 'Stifter og CEO',
-          bio: 'Maria startede Female Fairness efter at have indset, hvor meget kvinder bruger på sundhed uden nogensinde at have et klart overblik. Hun er drevet af at gøre de udgifter synlige og nemme at forstå.',
+          bio: 'Maria startede Female Fairness efter at have indset, hvor meget kvinder bruger på sundhed uden nogensinde at have et klart overblik. Hun brænder for at gøre udgifterne synlige og nemme at forstå.',
           image: teamMaria,
           imageVariant: 'maria',
         },
         {
           name: 'Gorm Frederiksen',
-          role: 'CTO & medstifter',
-          bio: 'Gorm leder teknologien bag Female Fairness. Han fokuserer på at bygge enkle og stabile systemer, der gør produktet nemt at bruge og klar til at skalere.',
+          role: 'CTO og medstifter',
+          bio: 'Gorm har ansvaret for teknologien bag Female Fairness. Han udvikler enkle og stabile systemer, der gør produktet nemt at bruge og kan vokse med virksomheden.',
           image: teamGorm,
           imageVariant: 'gorm',
         },
@@ -227,26 +228,26 @@ export function getMarketingContent(
         {
           name: 'Marcella Fagundes',
           role: 'Branddesigner',
-          bio: 'Marcella er ansvarlig for Female Fairness visuelle identitet. Hun forener design og kreativitet for at skabe en ren, intuitiv og menneskelig oplevelse.',
+          bio: 'Marcella er ansvarlig for den visuelle identitet hos Female Fairness. Hun forener design og kreativitet for at skabe en ren, intuitiv og menneskelig oplevelse.',
           image: teamMarcella,
         },
       ],
       testimonials: [
         {
           quote:
-            'Jeg havde aldrig indset, hvor meget jeg brugte bare på at holde mig sund. Værktøjet åbnede mine øjne.',
+            'Det var aldrig gået op for mig, hvor mange penge jeg brugte bare på at holde mig sund. Værktøjet åbnede mine øjne.',
           name: 'Sarah M.',
           location: 'København',
         },
         {
           quote:
-            'Vi bruger så meget på sundhedsprodukter, og jeg havde aldrig tænkt, at jeg kunne få noget af det tilbage! Wow',
+            'Vi bruger så meget på sundhedsprodukter, og jeg havde aldrig forestillet mig, at jeg kunne få nogle af pengene tilbage! Wow!',
           name: 'Maya K.',
           location: 'Aarhus',
         },
         {
           quote:
-            'Jeg har aldrig haft så tydelig information om kønssundhedsgabet. Det åbnede mine øjne.',
+            'Jeg har aldrig før fået så klar information om uligheden i sundhed mellem kvinder og mænd. Det åbnede mine øjne.',
           name: 'Anne H.',
           location: 'København',
         },
