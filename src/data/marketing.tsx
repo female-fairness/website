@@ -78,9 +78,8 @@ export function getMarketingContent(
           title: 'Følg dine sundhedsudgifter',
           body: (
             <>
-              Registrer din menstruationscyklus, symptomer, fysisk aktivitet,
-              humør og meget mere. Tag kontrol over din sundhed, og få hurtigere
-              klarhed.
+              Følg din cyklus, dine symptomer, din aktivitet og dit humør.
+              Lær din krop bedre at kende, og få mere overblik over din sundhed.
             </>
           ),
           tone: 'light',
@@ -89,8 +88,8 @@ export function getMarketingContent(
           title: 'Hold styr på din sundhed',
           body: (
             <>
-              Registrer din menstruationscyklus, symptomer, fysisk aktivitet,
-              humør og meget mere.
+              Hold styr på din cyklus, dine symptomer, din aktivitet og dit
+              humør – ét sted.
             </>
           ),
           tone: 'light',
@@ -99,9 +98,9 @@ export function getMarketingContent(
           title: 'Få penge tilbage',
           body: (
             <>
-              Vi arbejder på at mindske uligheden i sundhedsudgifter og give dig
-              nogle af pengene tilbage. Du bør ikke bruge mere på din sundhed, bare fordi
-              du har en kvindekrop.
+              Vi arbejder på løsninger, der mindsker uligheden i
+              sundhedsudgifter og giver dig nogle af pengene tilbage.
+              Det skal ikke koste ekstra at have en kvindekrop.
             </>
           ),
           tone: 'blue',
@@ -118,7 +117,7 @@ export function getMarketingContent(
             <>
               Mød andre, der vil skabe forandring.
               <br />
-              Oplev bevægelsen på tæt hold.
+              Bliv en del af bevægelsen.
             </>
           ),
           tone: 'light',
@@ -129,12 +128,12 @@ export function getMarketingContent(
           },
         },
         {
-          title: 'Bliv vores partner',
+          title: 'Bliv partner',
           body: (
             <>
-              Samarbejd med os om at skabe økonomisk lighed i sundhed. Bliv en del
-              af et fællesskab af virksomheder og organisationer, der skaber
-              reel forandring.
+              Vær med til at gøre sundhedsudgifter mere retfærdige.
+              Sammen med virksomheder og organisationer skaber vi
+              forandring, der kan mærkes.
             </>
           ),
           tone: 'brand',
@@ -151,8 +150,8 @@ export function getMarketingContent(
           title: 'Støt vores arbejde',
           body: (
             <>
-              Støt kvinder i nød gennem vores kvartalsvise donationer. Vær med
-              til at skabe mere lighed.
+              Hjælp kvinder i nød gennem vores donationer hvert kvartal.
+              Din støtte er med til at skabe mere lighed.
             </>
           ),
           tone: 'purple',
@@ -172,18 +171,18 @@ export function getMarketingContent(
           title: 'Vi sætter tal på',
           body: (
             <>
-              Vi sætter konkrete tal på de udgifter, kvinder har som følge af
-              biologi og samfundets indretning.
+              Vi sætter tal på de udgifter, kvinder står med på grund af
+              deres biologi og den måde, samfundet er indrettet på.
             </>
           ),
           tone: 'deep',
         },
         {
-          title: 'Vi forbinder',
+          title: 'Vi viser sammenhængen',
           body: (
             <>
-              Vi viser sammenhængen mellem den enkelte kvindes sundhedsdata og
-              den strukturelle økonomiske ulighed.
+              Vi kobler den enkelte kvindes sundhedsdata til den økonomiske
+              ulighed i samfundet.
             </>
           ),
           tone: 'red',
@@ -207,35 +206,35 @@ export function getMarketingContent(
         {
           name: 'Maria Olsen',
           role: 'Stifter og CEO',
-          bio: 'Maria startede Female Fairness efter at have indset, hvor meget kvinder bruger på sundhed uden nogensinde at have et klart overblik. Hun brænder for at gøre udgifterne synlige og nemme at forstå.',
+          bio: 'Maria stiftede Female Fairness, da hun opdagede, hvor meget kvinder bruger på sundhed uden at have overblik over udgifterne. Hun brænder for at gøre dem synlige og lette at forstå.',
           image: teamMaria,
           imageVariant: 'maria',
         },
         {
           name: 'Gorm Frederiksen',
           role: 'CTO og medstifter',
-          bio: 'Gorm har ansvaret for teknologien bag Female Fairness. Han udvikler enkle og stabile systemer, der gør produktet nemt at bruge og kan vokse med virksomheden.',
+          bio: 'Gorm står for teknologien bag Female Fairness. Han bygger enkle, stabile systemer, der gør platformen nem at bruge og kan vokse med virksomheden.',
           image: teamGorm,
           imageVariant: 'gorm',
         },
         {
           name: 'Anders',
           role: 'Teknisk bidragyder',
-          bio: 'Anders bidrager til udviklingen af Female Fairness og hjælper med at forme og understøtte teknologien bag platformen, efterhånden som den vokser.',
+          bio: 'Anders er med til at udvikle Female Fairness. Han bygger videre på teknologien bag platformen og sørger for, at den følger med, når platformen vokser.',
           image: teamAnders,
           imageVariant: 'anders',
         },
         {
           name: 'Marcella Fagundes',
           role: 'Branddesigner',
-          bio: 'Marcella er ansvarlig for den visuelle identitet hos Female Fairness. Hun forener design og kreativitet for at skabe en ren, intuitiv og menneskelig oplevelse.',
+          bio: 'Marcella står bag Female Fairness’ visuelle identitet. Med kreativitet og blik for design skaber hun et enkelt udtryk og en oplevelse, der føles naturlig og imødekommende.',
           image: teamMarcella,
         },
       ],
       testimonials: [
         {
           quote:
-            'Det var aldrig gået op for mig, hvor mange penge jeg brugte bare på at holde mig sund. Værktøjet åbnede mine øjne.',
+            'Jeg havde aldrig tænkt over, hvor mange penge jeg brugte bare på at holde mig sund. Værktøjet åbnede mine øjne.',
           name: 'Sarah M.',
           location: 'København',
         },
@@ -247,7 +246,7 @@ export function getMarketingContent(
         },
         {
           quote:
-            'Jeg har aldrig før fået så klar information om uligheden i sundhed mellem kvinder og mænd. Det åbnede mine øjne.',
+            'Jeg har aldrig før fået uligheden i sundhed mellem kvinder og mænd forklaret så klart. Det åbnede mine øjne.',
           name: 'Anne H.',
           location: 'København',
         },

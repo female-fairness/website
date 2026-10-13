@@ -394,7 +394,7 @@ export const contentByLocale: Record<Locale, LocaleContent> = {
     shared: {
       metaTitle: 'Female Fairness',
       metaDescription:
-        'Female Fairness arbejder for at udligne de skjulte forskelle i kvinders og mænds sundhedsudgifter med værktøjer, data og fællesskab.',
+        'Female Fairness gør kvinders skjulte sundhedsudgifter synlige. Med viden, værktøjer og fællesskab arbejder vi for økonomisk ligestilling.',
       header: {
         homeAriaLabel: 'Female Fairness – forside',
         navAriaLabel: 'Hovednavigation',
@@ -424,7 +424,7 @@ export const contentByLocale: Record<Locale, LocaleContent> = {
       heroTitle: (
         <>
           Kvinder bruger <span className="no-break">1–2 mio.</span> kr. mere på
-          sundhed gennem livet end mænd.
+          sundhed i løbet af livet end mænd.
         </>
       ),
       stats: [
@@ -433,7 +433,7 @@ export const contentByLocale: Record<Locale, LocaleContent> = {
           <span className="italic">4 år senere end mænd.</span>
         </>,
         <>
-          <span className="italic">1 ud af 4 kvinder</span> har svært ved at få
+          <span className="italic">1 ud af 4 kvinder</span> har svært ved at finde
           råd til menstruationsprodukter.
         </>,
         <>
@@ -457,21 +457,22 @@ export const contentByLocale: Record<Locale, LocaleContent> = {
       ),
       changeText: (
         <>
-          Kvinders sundhed bør ikke være en luksus –{' '}
-          <span className="italic">det bør være en rettighed.</span>
+          Kvinders sundhed skal ikke være en luksus –{' '}
+          <span className="italic">men en rettighed.</span>
           <br />
-          Vi vil give kvinder overblik over deres skjulte sundhedsudgifter.
-          Vores fællesskab og værktøjer giver dig handlekraft til at gøre noget
-          ved den økonomiske belastning – med ét klik.
+          Vi gør dine skjulte sundhedsudgifter synlige. Med vores værktøjer og
+          fællesskab får du overblik og bedre mulighed for at gøre noget ved
+          de udgifter, der belaster din økonomi.
         </>
       ),
       productTitle: 'Din sundhed, dine tal, din styrke',
       productText: (
         <>
-          Registrer, sammenlign og forstå dine faktiske sundhedsudgifter – fra
+          Hold styr på dine sundhedsudgifter, sammenlign dem, og forstå, hvad
+          din sundhed koster – fra
           menstruation til overgangsalder.{' '}
           <span className="italic">
-            Få overblik, tag kontrol og skab mere lighed med ét klik.
+            Få overblik, og tag det første skridt mod mere økonomisk lighed.
           </span>
         </>
       ),
@@ -483,67 +484,66 @@ export const contentByLocale: Record<Locale, LocaleContent> = {
         </>
       ),
       informedText:
-        'For at skabe forandring har vi brug for viden om uligheden mellem kønnene. I vores artikler finder du klare tal og viden, du kan bruge – om ulighed i sundhed, ny forskning i kvinders sundhed, økonomi og meget mere.',
+        'Forandring begynder med viden. I vores artikler sætter vi tal på uligheden mellem kvinder og mænd og gør dig klogere på kvinders sundhed, ny forskning og økonomi. Viden, du kan bruge til at stå stærkere.',
       communityTitle: 'Bliv en del af fællesskabet',
-      impactTitle: 'Virkelige kvinder, mærkbar forskel',
+      impactTitle: 'Kvinders erfaringer. Mærkbar forskel.',
       ctaTitle: 'Klar til at mindske uligheden?',
       ctaText:
-        'Vær med til at skabe en verden, hvor sundhedsudgifter ikke rammer skævt på grund af køn, og hvor de skjulte udgifter bliver synlige.',
+        'Vær med til at gøre de skjulte sundhedsudgifter synlige og skabe en verden, hvor regningen ikke afhænger af dit køn.',
       homePhoneAlt: 'Skærmbillede fra Female Fairness-appen',
       articlesPhoneAlt: 'Artikel fra Female Fairness vist på en mobiltelefon',
     },
     about: {
       heroLead:
-        '87 % af kvinder ønsker et retvisende overblik over deres økonomi, men mangler et værktøj til det. Derfor besluttede vi at udvikle et.',
+        '87 % af kvinder ønsker et klart overblik over deres økonomi, men mangler et værktøj, der kan give dem det. Derfor skabte vi Female Fairness.',
       heroTitle:
-        'Vi vil udligne de skjulte forskelle i sundhedsudgifter mellem kvinder og mænd.',
-      storyTitle: 'Ulighed bør ikke være en personlig månedlig udgift.',
+        'Vi vil gøre op med den skjulte ulighed i kvinders og mænds sundhedsudgifter.',
+      storyTitle: 'Ulighed skal ikke være en fast post i dit budget.',
       storyBody: (
         <>
           Kvinder betaler mere end mænd – på apoteket, hos speciallægen og i
           form af tabt arbejdstid. Det kaldes &quot;Gender Health-Wealth
-          Gap&quot;: uligheden mellem kønnene i sundhed og økonomi. I årtier har
-          vi fået at vide, at vi bare må betale. Vi har behandlet strukturel
-          ulighed som en personlig månedlig udgift.
+          Gap&quot; – uligheden mellem kønnene i sundhed og økonomi. I årtier har
+          vi fået at vide, at vi bare må betale. På den måde er strukturel
+          ulighed blevet til en regning, den enkelte kvinde selv må stå med.
           <br />
           <br />
-          Historien om hormonel prævention er et tydeligt eksempel: Det er
-          os, der forventes at tage medicin, ændre vores naturlige cyklus og
-          leve med bivirkningerne. De bivirkninger og ekstra sundhedsudgifter
-          bliver ikke regnet med. Men hvor meget mere bruger vi egentlig?
+          Hormonel prævention er et tydeligt eksempel. Det er os, der
+          forventes at tage medicin, ændre vores naturlige cyklus og leve med
+          bivirkningerne. Men hverken bivirkningerne eller de ekstra
+          sundhedsudgifter bliver regnet med. Hvor meget mere betaler vi egentlig?
           Hvorfor dør kvinder oftere af hjertesygdomme, når de rammes sjældnere
-          end mænd? Hvor er de konkrete tal? Den viden er svær at finde, og vi
-          manglede et værktøj til at opgøre den enkelte kvindes udgifter.
+          end mænd? Hvor er tallene? Den viden er svær at finde, og vi
+          manglede et værktøj, der kunne give den enkelte kvinde overblik over
+          sine udgifter.
           <br />
           <br />
           Derfor skabte vi Female Fairness – for at gøre noget ved uligheden
           mellem kønnene i sundhed og økonomi.
           <br />
-          Vi er ikke bare endnu et sundhedsbrand. Vi kombinerer teknologi til
-          kvinders sundhed med finansielle værktøjer for at gøre det usynlige
-          synligt.
+          Vi forener teknologi til kvinders sundhed med økonomiske værktøjer.
+          Sammen gør vi de usynlige udgifter synlige.
         </>
       ),
       mathTitle: 'Vi ændrer regnestykket.',
       mathLead: (
         <>
           <span className="italic">
-            Ingen pinkwashing. Ingen antagelser. Kun ligestilling med afsæt i
-            data.
+            Ingen pinkwashing. Intet gætværk. Ligestilling med afsæt i fakta.
           </span>
           <br />
-          Uanset om du er arbejdsgiver og vil gå forrest i arbejdet for lighed i sundhed,
-          eller kvinde og klar til at tage kontrol over dine sundhedsudgifter
-          gennem livet, er tiden, hvor du bare må betale, forbi.
+          Som arbejdsgiver kan du gå forrest i arbejdet for lighed i sundhed.
+          Som kvinde kan du tage styringen over dine sundhedsudgifter gennem
+          livet. Sammen gør vi op med tanken om, at kvinder bare må betale.
         </>
       ),
       teamTitle: 'Mød teamet',
       ctaTitle: 'Lad os mindske uligheden',
-      ctaText: 'Bliv en del af fællesskabet med tusindvis af kvinder, der arbejder for økonomisk ligestilling.',
+      ctaText: 'Vær med, når tusindvis af kvinder går sammen om at skabe økonomisk ligestilling.',
     },
     merch: {
       heroLead:
-        'Økologisk bomuld med tryk på både for- og bagsiden. Hvert køb støtter arbejdet med at gøre det usynlige synligt.',
+        'Økologisk bomuld med tryk på både for- og bagsiden. Med dit køb hjælper du os med at gøre de skjulte sundhedsudgifter synlige.',
       heroTitle: 'Bær budskabet.',
       productsTitle: 'Kollektionen',
       buyLabel: 'Køb',
@@ -554,17 +554,16 @@ export const contentByLocale: Record<Locale, LocaleContent> = {
       shippingTitle: 'Pakket og sendt af os',
       shippingBody: (
         <>
-          Vi pakker og sender hver eneste ordre selv fra København. Betalingen
-          håndteres sikkert af Stripe, og du får en bekræftelse på mail, så
-          snart din ordre er på vej.
+          Vi pakker selv din ordre og sender den fra København. Du betaler
+          sikkert via Stripe og får en mail, så snart din pakke er på vej.
           <br />
           <br />
-          Spørgsmål om størrelser, levering eller noget helt andet? Skriv til os
+          Har du spørgsmål om størrelser, levering eller andet? Skriv til os
           på maria@femalefairness.org.
         </>
       ),
       ctaTitle: 'Ligestilling går aldrig af mode',
-      ctaText: 'Få overblik over dine sundhedsudgifter i appen, mens du bærer budskabet.',
+      ctaText: 'Bær budskabet, og få overblik over dine sundhedsudgifter i appen.',
     },
     illustrations: {
       expenseOrbit: {
@@ -614,10 +613,10 @@ export const contentByLocale: Record<Locale, LocaleContent> = {
       },
       eventBanner: {
         ariaLabel: 'Eksempel på et banner for et arrangement',
-        title: 'Hvad betyder kvinders livsfaser for økonomien?',
+        title: 'Sådan påvirker kvinders livsfaser økonomien',
         location: 'København',
         date: '22. marts',
-        link: 'Læs mere og tilmeld dig via linket',
+        link: 'Læs mere, og tilmeld dig via linket',
       },
       gapAction: {
         ariaLabel: 'Eksempel på fordele, der mindsker uligheden i sundhedsudgifter',
@@ -630,21 +629,21 @@ export const contentByLocale: Record<Locale, LocaleContent> = {
           'Vi arbejder på løsninger, der kan sænke dine sundhedsudgifter.',
         tiles: [
           {
-            label: 'Skab med os',
-            copy: 'Du er blandt de første, der er med til at forme et nyt økonomisk system for kvinder.',
+            label: 'Vær med fra starten',
+            copy: 'Vær blandt de første til at forme et nyt økonomisk system for kvinder.',
             active: true,
           },
           {
             label: 'Kommer snart',
-            copy: 'Rabatter på sundhedsprodukter, du køber regelmæssigt.',
+            copy: 'Rabat på de sundhedsprodukter, du køber igen og igen.',
           },
           {
             label: 'Kommer snart',
-            copy: 'Partnerskaber med lokale apoteker om lavere priser på medicin.',
+            copy: 'Lavere medicinpriser gennem samarbejde med lokale apoteker.',
           },
           {
             label: 'Kommer snart',
-            copy: 'Besvar et spørgeskema om kvinders sundhed, og få betaling for det.',
+            copy: 'Få betaling for at besvare et spørgeskema om kvinders sundhed.',
           },
         ],
       },
