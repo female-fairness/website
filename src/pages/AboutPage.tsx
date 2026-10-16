@@ -86,7 +86,7 @@ export function AboutPage({ content, locale }: AboutPageProps) {
           title={copy.ctaTitle}
         />
       </main>
-      <Footer labels={content.shared.footer} />
+      <Footer labels={content.shared.footer} locale={locale} />
     </div>
   );
 }

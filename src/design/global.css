@@ -74,6 +74,26 @@ select {
   max-width: calc(var(--max-page) - (var(--page-gutter) * 2));
 }
 
+.survey-section__intro {
+  display: grid;
+  gap: var(--space-24);
+  margin: 0 auto var(--space-32);
+  max-width: 640px;
+}
+
+.survey-section__link {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.survey-section__form {
+  border: 0;
+  display: block;
+  margin: 0 auto;
+  max-width: 640px;
+  width: 100%;
+}
+
 .headline {
   font-family: var(--font-body);
   font-size: 70px;

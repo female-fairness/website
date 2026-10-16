@@ -124,7 +124,7 @@ export function MerchPage({ content, locale }: MerchPageProps) {
           title={copy.ctaTitle}
         />
       </main>
-      <Footer labels={content.shared.footer} />
+      <Footer labels={content.shared.footer} locale={locale} />
     </div>
   );
 }

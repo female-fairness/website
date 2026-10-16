@@ -9,12 +9,15 @@ const indexHtml = join(dist, 'index.html');
 const routes = [
   'about',
   'merch',
+  'survey',
   'en',
   'en/about',
   'en/merch',
+  'en/survey',
   'da',
   'da/about',
   'da/merch',
+  'da/survey',
 ];
 
 await Promise.all(

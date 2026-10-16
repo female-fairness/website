@@ -4,6 +4,7 @@ export const pageSegments = {
   home: '',
   about: 'about',
   merch: 'merch',
+  survey: 'survey',
 } as const;
 
 export type Locale = (typeof locales)[number];

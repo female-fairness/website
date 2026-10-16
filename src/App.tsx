@@ -5,6 +5,7 @@ import { resolveRoute } from './i18n/routing';
 import { AboutPage } from './pages/AboutPage';
 import { HomePage } from './pages/HomePage';
 import { MerchPage } from './pages/MerchPage';
+import { SurveyPage } from './pages/SurveyPage';
 
 function normalizePathname(pathname: string): string {
   return pathname.replace(/\/+$/, '') || '/';
@@ -93,6 +94,10 @@ export default function App() {
 
   if (route.page === 'merch') {
     return <MerchPage content={content} locale={route.locale} />;
+  }
+
+  if (route.page === 'survey') {
+    return <SurveyPage content={content} locale={route.locale} />;
   }
 
   return <HomePage content={content} locale={route.locale} />;

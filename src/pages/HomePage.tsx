@@ -148,7 +148,7 @@ export function HomePage({ content, locale }: HomePageProps) {
           title={copy.ctaTitle}
         />
       </main>
-      <Footer labels={content.shared.footer} />
+      <Footer labels={content.shared.footer} locale={locale} />
     </div>
   );
 }

@@ -13,6 +13,7 @@ interface HeaderCopy {
 }
 
 interface FooterCopy {
+  survey: string;
   tagline: string;
   address: ReactNode;
   linksAriaLabel: string;
@@ -123,6 +124,12 @@ export interface IllustrationCopy {
 }
 
 export interface LocaleContent {
+  survey: {
+    title: string;
+    intro: string;
+    openForm: string;
+    loading: string;
+  };
   shared: SharedCopy;
   home: HomeCopy;
   about: AboutCopy;
@@ -132,6 +139,12 @@ export interface LocaleContent {
 
 export const contentByLocale: Record<Locale, LocaleContent> = {
   en: {
+    survey: {
+      title: 'Share your experience',
+      intro: 'Take part in our survey using the form below.',
+      openForm: 'Open the survey in Google Forms',
+      loading: 'Loading…',
+    },
     shared: {
       metaTitle: 'Female Fairness',
       metaDescription:
@@ -146,6 +159,7 @@ export const contentByLocale: Record<Locale, LocaleContent> = {
         switchToDanish: 'Skift til dansk',
       },
       footer: {
+        survey: 'Survey',
         tagline: 'Where equality becomes action.',
         address: (
           <>
@@ -391,6 +405,12 @@ export const contentByLocale: Record<Locale, LocaleContent> = {
     },
   },
   da: {
+    survey: {
+      title: 'Del dine erfaringer',
+      intro: 'Deltag i vores spørgeskemaundersøgelse nedenfor.',
+      openForm: 'Åbn spørgeskemaet i Google Forms',
+      loading: 'Indlæser…',
+    },
     shared: {
       metaTitle: 'Female Fairness',
       metaDescription:
@@ -405,6 +425,7 @@ export const contentByLocale: Record<Locale, LocaleContent> = {
         switchToDanish: 'Skift til dansk',
       },
       footer: {
+        survey: 'Spørgeskema',
         tagline: 'Her bliver ligestilling til handling.',
         address: (
           <>
